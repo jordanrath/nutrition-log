@@ -1,0 +1,27 @@
+{
+  "homepage": "https://github.com/jordanrath.github.io./nutrition-log.git",
+  "name": "nutrtition-log",
+  "version": "1.0.0",
+  "description": "Nutrition Log",
+  "main": "index.html",
+  "scripts": {
+    "serve": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordanrath?tab=repositories"
+  },
+  "author": "Jordan Rath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jordanrath"
+  },
+  "dependencies": {
+    "chart.js": "^3.5.0",
+    "parcel": "^2.0.0-beta.2",
+    "snackbar": "^1.1.0",
+    "store2": "^2.14.2"
+  }
+}
