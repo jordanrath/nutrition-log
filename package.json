@@ -3,7 +3,7 @@
   "name": "nutrtition-log",
   "version": "1.0.0",
   "description": "Nutrition Log",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "serve": "parcel index.html",
     "build": "parcel build index.html",
