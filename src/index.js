@@ -9,6 +9,7 @@ import Chart from "chart.js/auto";
 
 const appData = new AppData();
 
+const snackbar = require('snackbar');
 const list = document.querySelector("#food-list");
 const form = document.querySelector("#create-form");
 const name = document.querySelector("#create-name");
