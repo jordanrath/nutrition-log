@@ -1,6 +1,6 @@
 import FetchWrapper from "./fetch-wrapper.js";
 import { capitalize, calculateCalories } from "./helpers.js";
-import { snackbar } from "snackbar";
+import snackbar from "node-snackbar";
 import AppData from "./app-data.js";
 import { API } from "./store2api.js";
 // import "snackbar/dist/snackbar.min.css"; 
@@ -9,6 +9,12 @@ import Chart from "chart.js/auto";
 
 const appData = new AppData();
 
+const snackbarDefault = {
+  duration: 30000,
+  pos: 'top-center',
+  width: '500',
+  textColor: '#777'
+};
 const list = document.querySelector("#food-list");
 const form = document.querySelector("#create-form");
 const name = document.querySelector("#create-name");
@@ -38,10 +44,16 @@ const handleCardClose = (position, card) => {
   }).then((data) => {
     if (data.error) {
       console.error(data.error)
-      snackbar.show("Unable to remove item.")
+      snackbar.show({
+        ...snackbarDefault, 
+        text: "Unable to remove item."
+      })
     } else {
       card.parentNode.parentNode.remove();
-      snackbar.show("Removed item.");
+      snackbar.show({
+        ...snackbarDefault, 
+        text: "Removed item."
+      });
       appData.removeFood(position);
       render();
     }
@@ -85,11 +97,17 @@ form.addEventListener("submit", (event) => {
     console.log(data);
     if (data.error) {
       // there was an error
-      snackbar.show("Some data is missing.");
+      snackbar.show({
+        ...snackbarDefault, 
+        text: "Some data is missing."
+      });
       return;
     }
 
-    snackbar.show("Food added successfully.");
+    snackbar.show({
+      ...snackbarDefault, 
+      text: "Food added successfully."
+    });
 
     displayEntry(name.value, carbs.value, protein.value, fat.value);
     render();

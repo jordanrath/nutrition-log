@@ -377,7 +377,21 @@ select {
   font-weight: bold;
 }
 
-.snackbar {
+/* .snackbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  height: 50px;
+}
+
+.snackbar-container button {
+  background-color: #2c2c2c;
+  color: whitesmoke;
+} */
+
+/* .snackbar {
   display: inline-block;
   position: fixed;
   background: #323232;
@@ -400,4 +414,4 @@ select {
 .snackbar--visible {
   visibility: visible;
   transform: none;
-}
+} */
