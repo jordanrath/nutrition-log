@@ -3,6 +3,7 @@ import { capitalize, calculateCalories } from "./helpers.js";
 import snackbar from "node-snackbar";
 import AppData from "./app-data.js";
 import { API } from "./store2api.js";
+import "node-snackbar/dist/snackbar.min.css";
 // import "snackbar/dist/snackbar.min.css"; 
 
 import Chart from "chart.js/auto";
@@ -10,7 +11,7 @@ import Chart from "chart.js/auto";
 const appData = new AppData();
 
 const snackbarDefault = {
-  duration: 30000,
+  duration: 3000,
   pos: 'top-center',
   width: '500',
   textColor: '#777'
