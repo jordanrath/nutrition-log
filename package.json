@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Nutrition Log",
   "main": "index.js",
+  "module": "main.js",
   "scripts": {
     "serve": "parcel index.html",
     "build": "parcel build index.html",
@@ -21,6 +22,7 @@
   "dependencies": {
     "chart.js": "^3.9.1",
     "dot-env": "^0.0.1",
+    "esm": "^3.2.25",
     "node-snackbar": "^0.1.16",
     "parcel": "^2.0.0-beta.2",
     "snackbar": "^1.1.0",
@@ -28,5 +30,6 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0"
-  }
+  },
+  "keywords": []
 }
