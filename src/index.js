@@ -8,7 +8,7 @@ import "node-snackbar/dist/snackbar.min.css";
 //import "snackbar/dist/snackbar.min.css"; 
 
 import Chart from "chart.js/auto";
-import snackbar from "node-snackbar";
+import snackbar from "../node_modules/node-snackbar";
 // import "node-snackbar.css/"
 // import snackbar from "node-snackbar";
 // import "node-snackbar/dist/snackbar.min.css";
