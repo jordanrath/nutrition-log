@@ -9,7 +9,7 @@ import "node-snackbar/dist/snackbar.min.css";
 
 import Chart from "chart.js/auto";
 import snackbar from "node-snackbar";
-import "node-snackbar/dist/snackbar.min.css";
+// import "node-snackbar/dist/snackbar.min.css";
 // import snackbar from "node-snackbar/src/js/snackbar";
 
 const appData = new AppData();
