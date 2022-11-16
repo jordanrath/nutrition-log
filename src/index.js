@@ -4,11 +4,13 @@ import { capitalize, calculateCalories } from "./helpers.js";
 import AppData from "./app-data.js";
 import { API } from "./store2api.js";
 // import '../node-snackbar/src/sass/snackbar.sass'
-import "../../node_modules/node-snackbar/dist/snackbar.min.css";
+import "../node_modules/node-snackbar/dist/snackbar.min.css";
 //import "snackbar/dist/snackbar.min.css"; 
 
 import Chart from "chart.js/auto";
-import snackbar from "../node_modules/node-snackbar";
+// import snackbar from "../node_modules/node-snackbar";
+// @ts-ignore
+import snackbar from "node-snackbar";
 // import "node-snackbar.css/"
 // import snackbar from "node-snackbar";
 // import "node-snackbar/dist/snackbar.min.css";
