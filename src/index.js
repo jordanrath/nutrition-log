@@ -166,13 +166,12 @@ const renderChart = () => {
     },
     options: {
       scales: {
-        yAxes: [
+        y: 
           {
             ticks: {
               beginAtZero: true,
             },
           },
-        ],
       },
     },
   });
