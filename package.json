@@ -22,7 +22,6 @@
   "dependencies": {
     "chart.js": "^3.9.1",
     "dot-env": "^0.0.1",
-    "node-snackbar": "^0.1.16",
     "parcel": "^2.0.0-beta.2",
     "store2": "^2.14.2"
   },
