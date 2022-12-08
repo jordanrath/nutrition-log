@@ -8,7 +8,7 @@ import { API } from "./store2api.js";
 
 import Chart from "chart.js/auto";
 import "../node_modules/node-snackbar/dist/snackbar.min.css";
-import snackbar from "node-snackbar"
+//import snackbar from "node-snackbar"
 // import snackbar from "node-snackbar";
 // import "node-snackbar.css/"
 // import snackbar from "node-snackbar";
@@ -17,12 +17,12 @@ import snackbar from "node-snackbar"
 
 const appData = new AppData();
 
-const snackbarDefault = {
-  duration: 3000,
-  pos: 'top-center',
-  width: '500',
-  textColor: '#777'
-};
+// const snackbarDefault = {
+//   duration: 3000,
+//   pos: 'top-center',
+//   width: '500',
+//   textColor: '#777'
+// };
 const list = document.querySelector("#food-list");
 const form = document.querySelector("#create-form");
 const name = document.querySelector("#create-name");
@@ -52,16 +52,16 @@ const handleCardClose = (position, card) => {
   }).then((data) => {
     if (data.error) {
       console.error(data.error)
-      snackbar.show({
-        ...snackbarDefault, 
-        text: "Unable to remove item."
-      })
-    } else {
+      // snackbar.show({
+      //   ...snackbarDefault, 
+      //   text: "Unable to remove item."
+      //})
+     } else {
       card.parentNode.parentNode.remove();
-      snackbar.show({
-        ...snackbarDefault, 
-        text: "Removed item."
-      });
+    //   snackbar.show({
+    //     ...snackbarDefault, 
+    //     text: "Removed item."
+    //   });
       appData.removeFood(position);
       render();
     }
@@ -103,19 +103,19 @@ form.addEventListener("submit", (event) => {
     },
   }).then((data) => {
     console.log(data);
-    if (data.error) {
-      // there was an error
-      snackbar.show({
-        ...snackbarDefault, 
-        text: "Some data is missing."
-      });
-      return;
-    }
+    // if (data.error) {
+    //   // there was an error
+    //   snackbar.show({
+    //     ...snackbarDefault, 
+    //     text: "Some data is missing."
+    //   });
+    //   return;
+    // }
 
-    snackbar.show({
-      ...snackbarDefault, 
-      text: "Food added successfully."
-    });
+    // snackbar.show({
+    //   ...snackbarDefault, 
+    //   text: "Food added successfully."
+    // });
 
     displayEntry(name.value, carbs.value, protein.value, fat.value);
     render();
