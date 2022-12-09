@@ -1,4 +1,4 @@
-import store from 'store2';
+import store from '/store2';
 
 const create404Response = async () => {
     return {
