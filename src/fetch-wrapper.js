@@ -1,6 +1,6 @@
 export default class FetchWrapper {
   constructor(baseURL) {
-    this.baseURL = baseURL;
+    this.baseURL = `https://react-food-log-default-rtdb.firebaseio.com/`;
   }
 
   get(endpoint) {
