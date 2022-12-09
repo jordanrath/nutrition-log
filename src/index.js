@@ -2,7 +2,7 @@ import FetchWrapper from "./fetch-wrapper.js";
 import { capitalize, calculateCalories } from "./helpers.js";
 // import snackbar from "node-snackbar";
 import AppData from "./app-data.js";
-import { API } from "./store2api.js";
+import API from "./store2api.js";
 // import '../node-snackbar/src/sass/snackbar.sass'
 //import "snackbar/dist/snackbar.min.css"; 
 
