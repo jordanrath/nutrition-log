@@ -67,7 +67,7 @@ const createFoodItem = async (data) => {
         }
     }
 
-const API = {
+export const API = {
     post: async (path, data) => {
         switch(path) {
             case "/": return createFoodItem(data);
@@ -82,5 +82,3 @@ const API = {
         }
     },
 }
-
-export default API;
