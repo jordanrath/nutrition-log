@@ -67,7 +67,7 @@ const createFoodItem = async (data) => {
         }
     }
 
-export default API = {
+export const API = {
     post: async (path, data) => {
         switch(path) {
             case "/": return createFoodItem(data);
@@ -82,3 +82,19 @@ export default API = {
         }
     },
 }
+
+// export default API = {
+//     post: async (path, data) => {
+//         switch(path) {
+//             case "/": return createFoodItem(data);
+//             case "/close": return removeFoodItem(data);
+//             default: return create404Response();
+//         }
+//     },
+//     get: async (path, data) => {
+//         switch(path) {
+//             case "/": return getFoodItems(data);
+//             default: return create404Response();
+//         }
+//     },
+// }
