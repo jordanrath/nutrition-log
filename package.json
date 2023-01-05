@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Nutrition Log",
   "main": "index.js",
-  "module": "index.js",
+  "type": "module",
+  "module": "main.js",
   "scripts": {
     "serve": "parcel index.html",
     "build": "parcel build index.html",
