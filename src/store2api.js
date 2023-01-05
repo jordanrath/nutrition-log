@@ -22,7 +22,7 @@ const createFoodItem = async (data) => {
             error: "Name is a required field and cannot be null"
         }
     }
-
+    //
     if (typeof carbs != 'number' || typeof protein != 'number' || typeof fat != 'number') {
         return {
             error: "Nutritional Info (carbs, protein, fat) must be numbers"
