@@ -52,16 +52,8 @@ const handleCardClose = (position, card) => {
   }).then((data) => {
     if (data.error) {
       console.error(data.error)
-      // snackbar.show({
-      //   ...snackbarDefault, 
-      //   text: "Unable to remove item."
-      //})
      } else {
       card.parentNode.parentNode.remove();
-    //   snackbar.show({
-    //     ...snackbarDefault, 
-    //     text: "Removed item."
-    //   });
       appData.removeFood(position);
       render();
     }
