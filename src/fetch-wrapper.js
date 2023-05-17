@@ -32,4 +32,4 @@ export default class FetchWrapper {
       body: JSON.stringify(body),
     }).then((response) => response.json());
   }
-}
+};
